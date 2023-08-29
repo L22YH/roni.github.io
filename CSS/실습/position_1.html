@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    html {
+      border: 1px solid green;
+    }
+
+    div {
+      border: 5px solid tomato;
+      margin: 10px;
+    }
+
+    #me {
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="other">other</div>
+  <div id="parent">
+    parent
+    <div id="me">me</div>
+  </div>
+</body>
+
+</html>
+
+<!-- 
+offset은 position을 선택 해줘야 지정할수 있다.
+offset : 위치를 움직일때 사용하는 것
+position은 평소 static이지만 offset을 사용하기 위해 relative를
+해줘야 변경할 수 있다.
+-->

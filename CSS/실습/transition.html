@@ -1,0 +1,36 @@
+<!--
+tranform의 효과는 해당 요소가 block-level이거나 inline-block인 경우에만 동작함.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    a {
+      font-size: 3rem;
+      display: inline-block;
+      /*
+      transition-property: all;
+  
+      transition-duration: 0.3s;
+      */
+      /* transform: all 1s; 로 사용 가능함 */
+      transition: font-size 1s, transform 0.1s;
+      /* font-size와 transform을 서로 다른 시간으로 통제하고자 할 때 방법 */
+      transition-delay: 0.5s;
+
+    }
+
+    a:active {
+      transform: translate(20px, 20px);
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">Click</a>
+</body>
+
+</html>

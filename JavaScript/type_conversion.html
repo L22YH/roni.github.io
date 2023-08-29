@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style></style>
+</head>
+
+<body>
+  <script>
+    const mathScore = prompt("수학점수 입력");
+    const engScore = prompt("영어점수 입력");
+    const result = (mathScore + engScore); // prompt로 값을 받았으므로 결과값은 문자형임.
+
+    Number(result); // 숫자가 아닌 문자가 매개변수로 들어오면 NaN이 됨, null시 0, undefined시 NaN임.
+    Sting(result) //다시 문자형으로 변경
+    Boolean(result) // 숫자 0, 빈문자열, null, NaN, undefined 만 false이므로 해당 값은 true가 됨
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!-- 
+
+  media query는 반응형 웹을 제작할 때 자주 쓰인다.
+  아래 코드는 웹의 크기에 따라 배경 색상을 변경시키는 것이다.
+  좀 더 깊게 보려면 media_query2를 참고해야한다.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <style>
+    @media (max-width:600px) {
+      body {
+        background-color: green;
+      }
+    }
+
+    @media (max-width:300px) {
+      body {
+        background-color: red;
+      }
+    }
+
+    @media (min-width:601px) {
+      body {
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

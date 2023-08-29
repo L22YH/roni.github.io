@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>Object</h1>
+  <h2>Create</h2>
+  <script>
+    let cowokers = {
+      "programmer": "egoing",
+      "designer": "leezche"
+
+    };
+    document.write("programmer : " + cowokers.programmer + "<br>");
+    document.write("designer : " + cowokers.designer + "<br>");
+    cowokers.bookkeeper = "duru";
+    document.write("bookkeeper :" + cowokers.bookkeeper + "<br>");
+
+    // data add 
+    cowokers["data scientist"] = "taeho";
+    document.write("data scientist : " + cowokers["data scientist"] + "<br>");
+  </script>
+
+  <h2>Iterate</h2>
+  <script>
+    for (let key in cowokers) {
+      document.write(key + "<br>");
+    }
+    document.write("<br><br>");
+  </script>
+
+  <script>
+    for (let key in cowokers) {
+      document.write(cowokers[key] + "<br>");
+    }
+
+    document.write("<br><br>");
+  </script>
+
+  <script>
+    for (let key in cowokers) {
+      document.write(key + ' : ' + cowokers[key] + "<br>");
+    }
+  </script>
+  <h2>Property & Method</h2>
+  <script>
+    cowokers.showAll = function () {
+      for (let key in this) {
+        document.write(key + ' : ' + this[key] + "<br>");
+      }
+    }
+    cowokers.showAll();
+  </script>
+</body>
+
+</html>

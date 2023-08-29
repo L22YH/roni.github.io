@@ -1,0 +1,54 @@
+<!--
+
+background-repeat: no-repeat;
+x축 반복하고 싶으면 : repeat-x
+y축 반복하고 싶으면 : repeat-y
+반복을 안하고 싶으면 : no-repeat
+
+background-attachment: fixed;
+사진의 위치를 고정하고 텍스트만 스크롤 되게 하기 위해 사용
+
+background-size: 500px 100px;
+px px : 가로, 세로 순서로 입력
+cover :  화면 전체를 이미지가 사용하게 됨(img크기에 따라 손실이 있을수 있음)
+contain : 화면의 크기에 이미지가 맞춰서 들어감
+
+background: tomato url('img.jpg') no-repeat fixed center;
+축약형으로는 위와 같이 사용할 수 있다.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    div {
+      font-size: 100px;
+      height: 700px;
+      border: 5px solid tomato;
+      /*
+      background-image: url('img.jpg');
+      background-color: aqua;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-attachment: fixed;
+      background-size: contain;
+      */
+      background: tomato url('img.jpg') no-repeat fixed center;
+    }
+  </style>
+</head>
+
+</html>
+
+<body>
+  <div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quo illum dolor aliquam temporibus ad aut
+    dolore, atque ea repellendus modi ratione molestias esse id rem deleniti quasi culpa veniam unde? Quidem minus
+    minima maiores illo ipsa totam! Id architecto quasi sequi nulla sunt a. Quaerat nesciunt ut explicabo doloremque
+    dolores corrupti cupiditate, at, deleniti nostrum saepe voluptatum aut! Enim rem vel aspernatur minima itaque
+    pariatur perferendis aliquam labore possimus, earum minus odio eius delectus cupiditate dignissimos nulla reiciendis
+    neque ducimus blanditiis magnam impedit. Iste nam veritatis dolore deleniti odit! Totam aliquam quidem accusantium,
+    provident sequi facere reiciendis delectus voluptatum?
+  </div>
+</body>

@@ -1,0 +1,45 @@
+<!-- 
+
+img {
+  transition: all 3s;
+}
+이미지에 효과를 부여할떄 걸리는 시간
+
+img:hover{}
+마우스를 올렸을때 나타날 효과
+
+img {
+  filter : 효과를 주기위한 것
+  grayscale : 흑백 유무를 %로 할당
+  blur : 흐리기 정도를 px로 할당
+}
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    img {
+      transition: all 3s;
+    }
+
+    img:hover {
+      -webkit-filter: grayscale(50%) blur(1px);
+      -o-filter: grayscale(50%) blur(1px);
+      filter: grayscale(50%) blur(1px);
+    }
+
+    h1 {
+      filter: blur(2px);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Filter</h1>
+  <img src="img.jpg" alt="사진">
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!-- 
+삽화, 레이아웃을 잡을때 많이 사용했었음.
+다만 flex를 많이 사용해짐에 따라 점점 사용을 안하는 추세이나
+ms에서 조사한 결과에 따르면 웹사이트의 87%가 사용중인 것으로 알려짐(clear는 79%).
+
+float로 위치를 지정할수 있음.
+<p style="clear:both;"> 를 통해서 사진을 피하지 않고 작성
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    img {
+      width: 300px;
+      float: right;
+      margin: 20px;
+    }
+
+    p {
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="img.jpg" alt="사진">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit accusantium et odit aspernatur tempora facere
+    nobis consequuntur provident. Sed nam quae, ab ducimus magnam dolores maxime voluptas iure enim debitis rem cum eos
+    nemo quosnimi blanditiis accusamus, maxime consequatur impedit eius voluptatum in iusto itaque
+    natus eum? Eveniet non in placeat nobis!</p>
+  <p style="clear:both;">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae est, vero quas placeat
+    similique dolorum, fugit
+    exercitationem magni error vel eum! Modi impedit optio non eveniet maxime quae debitis beatae. Sequi quisquam
+    numquam voluptates culpa reprehenderit rerum repellat enim, praesentium quidem, doloribus laudantium nulla totam et
+    veritatis magnam saepe? Voluptatum ullam ipsum, nobis totam magnam quia illo quo sed voluptates facilis consequatur
+    possimus velit nesciunt tenetur quis mollitia odio, sit iure harum impedit? Earum consequuntur sunt, minus dolorum
+    libero necessilore ullam veritatis architecto laudantium minus adipisci sint soluta
+    deleniti. Labore tempora laudantium facilis sint, tempore illum distinctio accusantium minus doloremque, iure animi
+    obcaecati. Blanditiis nulla ut reiciendis perspiciatis. Maiores eius, ducimus, quas debitis maxime ratione eligendi
+    nihil dolore, facere provident exercitationem facilis modi! Laboriosam soluta minima omnis a ratione. Voluptatibus
+    laboriosam corporis totam laborum, sunt aliquid. Non, voluptates temporibus ipsam id nisi dignissimos a tempora
+    numquam cum pariatur placeat ullam dolores architecto dolorum unde nemo, minus dolore blanditiis molestias. Ullam
+    repellendus nostrum omnis eius voluptas libero provident necessitatibus perspiciatis.</p>
+</body>
+
+</html>
